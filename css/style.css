@@ -1,0 +1,490 @@
+
+/* Mobile sizes ----------------------------------------------------------------------------------------------------------------------*/
+@media (max-width: 768px){
+
+
+* {
+    box-sizing: border-box;
+}
+.header {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #666666;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    margin: 80px auto 40px;
+    font-size: 16px;
+    background-color: #97fcff;
+    width: 80%;
+    height: 80%;
+}
+h1 {
+    margin-top: 40px;
+    font-size: 18px;
+}
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+    margin-top: 50px;
+}
+body {
+    margin: 0px 0px 150px 0px;
+    background-color: black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   /* width: 960px; */
+}
+.bold {
+    font-weight: bold;
+}
+.content {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #f6fff6;
+    color: #666666;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+    margin: 30px auto;
+    font-size: 12px;
+    width: 80%;
+    height: 80%;
+}
+.upper-nav-list {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0px;
+    padding: 0px;
+    position: fixed;
+  }
+.nav-list a {
+    display: flex;
+    justify-content: center;
+    width: 85px;
+    background-color: #000000;
+    color: #f6fff6;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 12px;
+    border: 2px solid #f0fff0;
+    border-radius: 10px;
+  }
+.nav-list a:hover,
+.nav-list a:focus {
+    background-color: #233322;
+    color: #00cca0;
+    border: 2px solid #00cca0;
+    outline: none;
+}
+.nav-list {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+.photo-list {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 0;
+}
+.image {
+    display: block; 
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    width: 80%;
+    height: 80%;
+}
+.git {
+    display:inline-block;
+    margin: 0 auto;
+    opacity: 0.7;
+    border: 2px solid #f6fff6;
+    border-radius: 10px;
+}
+.git-logo {
+    width: 180px;
+
+}
+.git:hover,
+.git:focus {
+    opacity: 1;
+    border: 2px solid #00cca0;
+    border-radius: 10px;
+    outline: none;
+}
+form div {
+    margin: 2px 0 15px 0;
+}
+form {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+fieldset {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.link {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 800;
+}
+.link:hover,
+.link:focus {
+    color: #00cca0;
+    outline: none;
+}
+.button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #f6fff6;
+}
+.button:hover,
+.button:focus {
+    background-color: #233322;
+    color: #00cca0;
+    outline:none;
+}
+.iframe {
+    margin: 30px auto;
+}
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: #00cca0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;  
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* Dropdown menu */
+/* Dropdown Button */
+.dropbtn {
+    background-color: #0e6985;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 36px;
+    background-color: #000000;
+    color: #f6fff6;
+    text-align: center;
+    padding: 10px;
+    margin: 2px;
+    text-decoration: none;
+    font-size: 16px;
+    border: 2px solid #f0fff0;
+    border-radius: 10px;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: fixed;
+    /* give it dimensions */
+ 
+    
+    margin-top: 2px;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(21, 146, 146);
+    padding: 8px 8px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: transparent;
+      color: rgb(0, 197, 122);
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+}
+
+
+
+
+
+
+
+/* Laptop/desktop sizes ----------------------------------------------------------------------------------------------------------------------*/
+@media (min-width: 769px){
+
+
+    * {
+        box-sizing: border-box;
+    }
+    .header {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        color: #666666;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        margin: 80px auto 40px;
+        font-size: 16px;
+        background-color: #97fcff;
+        width: 60%;
+        height: 60%;
+    }
+    h1 {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    h2 {
+        font-family: 'Open Sans', sans-serif;
+        text-align: center;
+        font-size: 18px;
+        color: #666666;
+        font-style: italic;
+        margin-top: 50px;
+    }
+    body {
+        margin: 0px 0px 150px 0px;
+        background-color: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+       /* width: 960px; */
+    }
+    .bold {
+        font-weight: bold;
+    }
+    .content {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        background-color: #f6fff6;
+        color: #666666;
+        padding: 10px 20px 10px 20px;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        margin: 30px auto;
+        font-size: 16px;
+        width: 60%;
+        height: 60%;
+    }
+    .upper-nav-list {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        list-style-type: none;
+        margin-top: 0px;
+        padding: 0px;
+        position: fixed;
+      }
+    .nav-list a {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #000000;
+        color: #f6fff6;
+        text-align: center;
+        padding: 10px;
+        margin: 2px;
+        text-decoration: none;
+        font-size: 16px;
+        border: 2px solid #f0fff0;
+        border-radius: 10px;
+      }
+    .nav-list a:hover,
+    .nav-list a:focus {
+        background-color: #233322;
+        color: #00cca0;
+        border: 2px solid #00cca0;
+        outline: none;
+    }
+    .nav-list {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+      }
+    .photo-list {
+        list-style-type: none;
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .image {
+        display: block; 
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 1px solid #000000;
+        width: 60%;
+        height: 60%;
+    }
+    .git {
+        display:inline-block;
+        margin: 0 auto;
+        opacity: 0.7;
+        border: 2px solid #f6fff6;
+        border-radius: 10px;
+    }
+    .git-logo {
+        width: 180px;
+    
+    }
+    .git:hover,
+    .git:focus {
+        opacity: 1;
+        border: 2px solid #00cca0;
+        border-radius: 10px;
+        outline: none;
+    }
+    form div {
+        margin: 2px 0 15px 0;
+    }
+    form {
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    fieldset {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .link {
+        color: #000000;
+        text-decoration: none;
+        font-weight: 800;
+    }
+    .link:hover,
+    .link:focus {
+        color: #00cca0;
+        outline: none;
+    }
+    .button {
+        padding: 10px 15px;
+        background-color: #000000;
+        color: #f6fff6;
+    }
+    .button:hover,
+    .button:focus {
+        background-color: #233322;
+        color: #00cca0;
+        outline:none;
+    }
+    .iframe {
+        margin: 30px auto;
+    }
+    .footer {
+        font-family: 'Roboto', sans-serif;
+        background-color: black;
+        color: #00cca0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        text-align: center;  
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    
+    /* Dropdown menu */
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: #0e6985;
+        color: rgb(0, 0, 0);
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        width: 50px;
+        background-color: #000000;
+        color: #f6fff6;
+        text-align: center;
+        padding: 10px;
+        margin: 2px;
+        text-decoration: none;
+        font-size: 16px;
+        border: 2px solid #f0fff0;
+        border-radius: 10px;
+      }
+      
+      /* The container <div> - needed to position the dropdown content */
+      .dropdown {
+        position: fixed;
+        /* give it dimensions */
+     
+        
+        margin-top: 2px;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: transparent;
+        min-width: 80px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: rgb(21, 146, 146);
+        padding: 8px 8px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {
+          background-color: transparent;
+          color: rgb(0, 197, 122);
+    }
+      
+      /* Show the dropdown menu on hover */
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      /* Change the background color of the dropdown button when the dropdown content is shown */
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+    
+    }
